@@ -2280,12 +2280,7 @@ else
   ac_ext=py
 ac_compile='chmod +x conftest.$ac_ext >&5'
 ac_link='chmod +x conftest.$ac_ext && cp conftest.$ac_ext conftest >&5'
-     if test "$cross_compiling" = yes; then :
-  { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
-$as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
-as_fn_error $? "cannot run test program while cross compiling
-See \`config.log' for more details" "$LINENO" 5; }
-else
+
   cat > conftest.$ac_ext <<_ACEOF
 #!$PYTHON
 import sys
@@ -2316,7 +2311,6 @@ else
 fi
 rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
   conftest.$ac_objext conftest.beam conftest.$ac_ext
-fi
 
      ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
